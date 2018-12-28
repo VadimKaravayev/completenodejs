@@ -32,6 +32,12 @@ app.get('/about', (request, response)=> {
     });
 });
 
+app.get('/projects', (request, response)=> {
+    response.render('projects', {
+        pageTitle: 'Projects portfolio'
+    });
+});
+
 
 app.listen(process.env.PORT, process.env.IP, ()=> {
     console.log('Server started');
